@@ -1,10 +1,68 @@
 # Slack Clone
 
-This is a Slack clone, built with [Next.js](https://nextjs.org/), [shadcn/ui](https://ui.shadcn.com/) component library, [convex](https://www.convex.dev/) database and auth, following this [tutorial](https://www.youtube.com/watch?v=lXITA5MZIiI) by [Code with Antonio](https://www.youtube.com/@codewithantonio).
+## 📝 Project Overview
 
-The application is deployed on Vercel [here](https://slack-clone-green-omega.vercel.app/).
+This is a full-featured Slack clone built with modern web technologies, providing a real-time communication platform with robust features and a sleek user interface.
 
-## Note
+## 🚀 Features
 
-1. For the API hooks, [@tanstack/react-query](https://tanstack.com/query/latest) is used to wrap the `useQuery` and `useMutation` hook from `@convex/react`.
-2. For form, [react-hook-form](https://react-hook-form.com/) is used.
+- 🔐 Authentication & User Management
+- 💬 Real-time Messaging
+- 🔗 Channel Creation and Management
+- 👥 Workspace Collaboration
+- 📤 File Uploads
+- 😀 Emoji Reactions
+- 🌓 Dark/Light Mode Support
+
+## 🛠 Tech Stack
+
+### Frontend
+- [Next.js 14](https://nextjs.org/) - React Framework
+- [React](https://reactjs.org/) - UI Library
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components
+- [Zustand](https://github.com/pmndrs/zustand) - State Management
+
+### Backend & Database
+- [Convex](https://www.convex.dev/) - Realtime Backend
+- [Next Auth](https://next-auth.js.org/) - Authentication
+
+### Additional Libraries
+- [React Query](https://tanstack.com/query/latest) - Data Fetching
+- [Quill](https://quilljs.com/) - Rich Text Editing
+- [Sonner](https://sonner.emilkowal.ski/) - Toast Notifications
+
+## 🏁 Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- Bun or npm
+- Convex Account
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/slack-clone.git
+cd slack-clone
+```
+
+2. Install dependencies
+```bash
+bun install
+# or
+npm install
+```
+
+3. Set up environment variables
+- Create a `.env.local` file
+- Add necessary Convex and authentication configurations
+
+4. Run the development server
+```bash
+bun dev
+# or
+npm run dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
